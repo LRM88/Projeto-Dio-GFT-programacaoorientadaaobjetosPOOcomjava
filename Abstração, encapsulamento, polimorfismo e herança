@@ -1,0 +1,35 @@
+public class Bootcamp{
+ 
+    public static void main(String[] args) {
+         
+        Cursos cursos = new cursos();
+        cursos.setNome("Java");
+        cursos.setDuracao(30dias);
+        
+        Mentoria mentoria = new Mentoria();
+        mentoria.setNome("nomementor");
+        mentoria.setDuracao(1hora);
+         
+        Dev dev = new Dev();
+        dev.setNome("nomedesenvolvedor");
+        dev.setExperiencia(1ano);
+        
+        System.out.println("##### Cursos #####");
+        System.out.println("Nome.: "+cursos.getNome());
+        System.out.println("Duracao.: "+cursos.getDuracao());
+        System.out.println("Calculo.: "+cursos.calculaDuracao());
+        System.out.println();
+         
+        System.out.println("##### Mentoria #####");
+        System.out.println("Nome.: "+mentoria.getNome());
+        System.out.println("Duracao.: "+mentoria.getDuracao());
+        System.out.println("Calculo.: "+mentoria.calculaDuracao());
+        System.out.println();
+         
+        System.out.println("##### Dev #####");
+        System.out.println("Nome.: "+dev.getNome());
+        System.out.println("Experiencia.: "+dev.getExperiencia());
+        System.out.println("Calculo.: "+dev.calculaExperiencia());
+        System.out.println();
+         
+    }
